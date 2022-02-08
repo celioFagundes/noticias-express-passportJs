@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+<div class="container min-vh-100 py-4">
+  <h1 class="mb-4 text-center">Noticias</h1>
+  <% noticias.forEach(noticia => { %>
+    <div class="card w-75 mb-3">
+      <div class="card-body">
+        <h5 class="card-title"><%= noticia.title %></h5>
+        <p class="card-text"><%= noticia.content %></p>
+      </div>
+    </div>
+  <% }) %>
+</div>
+<%- include('../partials/footer') %>
